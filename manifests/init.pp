@@ -442,7 +442,7 @@ class authconfig (
       }
 
       $smartcard_flags = $smartc ? {
-        true    => "${smartcard_flg} ${smartcard_action_flg} ${smartcard_require_flag}",
+        true    => "${smartcard_flg} ${smartcard_action_flg} ${smartcard_require_flg}",
         default => '',
       }
 
