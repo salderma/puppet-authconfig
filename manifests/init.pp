@@ -410,12 +410,12 @@ class authconfig (
         default => '--disablesmartcard',
       }
 
-      $smartcard_action_flg = $smartc and $smartcaction ? {
+      $smartcard_action_flg = $smartcaction ? {
         true    => '--smartcardaction=0',
         default => '--smartcardaction=1',
       }
 
-      $smartcard_require_flg = $smartc and $smartcrequire ? {
+      $smartcard_require_flg = $smartcrequire ? {
         true    => '--enablerequiresmartcard',
         default => '--disablerequiresmartcard',
       }
